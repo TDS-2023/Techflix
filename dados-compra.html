@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Assets/dados-compra.css">
+    <link rel="icon" href="./Img/logoNuvem.png">
+    <title>Techflix - Dados para compra básico</title>
+</head>
+
+<body>
+    <section> <!-- Início da seção de navegação -->
+        <header>
+            <div><!-- Barra de pesquisa -->
+                <label for="busca"><img class="lupa-img" src="./Img/lupa2.png" alt="lupa" width="25px"></label>
+                <input id="busca" type="search" placeholder="Busque seu filme!"> <!-- Campo de pesquisa -->
+            </div>
+            <a href="index.html" class="logo">
+                <img src="./Img/logo.png" width="250px" alt="Logo Techflix"><!-- Logo -->
+            </a>
+            <nav> <!-- Navegação -->
+                <div class="links">
+                    <ul class="nav-itens">
+                        <li><a href="sobrenos.html">Sobre</a></li> <!-- Links para outras páginas -->
+                        <li><a href="pag-planos.html">Planos</a></li>
+                        <li><a href="catalogo.html">Catálogo</a></li>
+                    </ul>
+                </div>
+                <div class="btn"><!-- Botões de login e cadastro -->
+                    <a href="login.html">
+                        <button class="login">LOGIN</button>
+                    </a>
+                    <a href="cadastro.html">
+                        <button class="cadastro">CADASTRO</button>
+                    </a>
+                </div>
+            </nav>
+        </header>
+    </section>
+
+    <main>
+        <div class="login-principal"> <!-- Div criada para o login principal -->
+            <div class="movimentar">
+                <div class="right-login">
+                    <div class="card-login"> <!-- Card do login -->
+                        <h1>Informe os dados do seu cartão de crédito ou débito</h1>
+                        <div class="campodetexto">
+                            <label for="Nome">Nome</label>
+                            <input type="text" name="usuario" placeholder="Nome" id="usuario" required> <!-- Campo de Nome -->
+                        </div>
+                        <div class="campodetexto">
+                            <label for="sobrenome">Sobrenome</label>
+                            <input type="text" name="sobrenome" placeholder="Sobrenome" id="email" required> <!-- Campo de Sobrenome -->
+                        </div>
+                        <div class="campodetexto">
+                            <label for="numero-cartao">Numero do cartão</label>
+                            <input type="text" name="numero-cartao" placeholder="Número do cartão" id="numero-cartao" required> <!-- Campo para o número do cartão -->
+                        </div>
+                        <div class="campodetexto">
+                            <label for="data">Informe sua data de nascimento</label>
+                            <input type="date" name="data" placeholder="dd/mm/aaaa" id="data" required> <!-- Campo para a data de nascimento -->
+                        </div>
+                        <div class="campodetexto">
+                            <label for="cvv">CVV</label>
+                            <input type="text" name="cidade" placeholder="CVV" id="cvv" required> <!-- Campo para o CVV do cartão -->
+                        </div>
+                        <div class="campodetexto">
+                            <label for="data-validade">Data de validade</label>
+                            <input type="date" name="data-validade" placeholder="dd/mm/aaaa" id="data-validade"
+                                required> <!-- Campo para a data de validade do cartão -->
+                        </div>
+                        <div class="campodetexto">
+                            <div class="check">
+                                <input type="checkbox" name="check" id="checkbox" required> <!-- Checkbox para aceitar os termos -->
+                                <label for="checkbox">Li e aceito com os termos de uso e política de privacidade</label>
+                            </div>
+                        </div>
+                        <button class="btn-login">Enviar</button> <!-- Botão de envio do formulário -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <h2>Todos os direitos reservados a Techflix</h2>
+    </footer>
+</body>
+
+</html>

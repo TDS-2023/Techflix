@@ -1,0 +1,304 @@
+/* Importando a fonte */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Roboto:wght@300;400&display=swap');
+
+/* Reset CSS padrão e configurações globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Configurações gerais do corpo da página */
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+/* Estilos do cabeçalho */
+header {
+    width: 100%;
+    display: flex;
+    padding: 15px 50px;
+    background-color: #00ff88;
+    background: linear-gradient(42deg, #00FF88 2%, #00a85a 10%, #2e263f 42%);
+    justify-content: space-between;
+    box-sizing: border-box;
+    color: aliceblue;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Estilos do logo */
+.logo {
+    position: relative;
+    left: 110px;
+}
+
+/* Estilos da barra de navegação */
+nav {
+    display: flex;
+    font-weight: bold;
+    align-items: center;
+    color: #202020;
+}
+
+/* Estilos dos itens de navegação */
+.nav-itens {
+    list-style: none;
+    display: flex;
+}
+
+/* Estilos dos botões de cadastro e login */
+.cadastro,
+.login {
+    padding: 5px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    color: #202020;
+    background-color: #00FF88;
+    font-weight: bold;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+/* Estilos do campo de busca */
+#busca {
+    display: inline;
+    margin-left: 15px;
+    outline: none;
+    border-radius: 5px;
+    padding: 10px;
+    padding-right: 10px;
+    background-color: #202020;
+    color: white;
+    border: none;
+}
+
+/* Estilos do texto de espaço reservado no campo de busca */
+#busca::placeholder {
+    color: #f0ffff94;
+}
+
+/* Estilos dos links de navegação */
+a {
+    color: white;
+    text-decoration: none;
+    transition: 0.6s ease-in-out;
+    margin-left: 15px;
+    font-size: 18px;
+}
+
+/* Estilos dos links de navegação ao passar o mouse sobre eles */
+a:hover {
+    color: #00FF88;
+}
+
+/* Estilos dos botões de cadastro e login ao passar o mouse sobre eles */
+.cadastro:hover,
+.login:hover {
+    opacity: 1;
+}
+
+/* Estilos da imagem da lupa na barra de pesquisa */
+.lupa-img {
+    position: relative;
+    top: 10px;
+}
+
+main{
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Estilos para a seção de cadastro */
+.login-principal {
+    width: 100vw;
+    height: 100vh;
+    background: #201b2c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container para o conteúdo do cadastro */
+.movimentar {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background: #201b2c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Lado esquerdo do cadastro */
+.left-login {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.left-login > h1 {
+    font-size: 1.5vw;
+    color: white;
+    margin-bottom: 20px;
+}
+
+/* Lado direito do cadastro */
+.right-login {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 9px;
+}
+
+/* Cartão de login */
+.card-login {
+    margin-bottom: 15px;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: #2f2841;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px #00000056;
+}
+
+.card-login > h1 {
+    color: #00ff88;
+    font-weight: 800;
+    margin: 0;
+}
+
+/* Campos de texto */
+.campodetexto {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.campodetexto > input {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: #514869;
+    color: #f0ffffde;
+    font-size: 12pt;
+    box-shadow: 0 10px 40px #00000056;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.campodetexto > label {
+    color: #f0ffffde;
+    margin-bottom: 10px;
+}
+
+.campodetexto > input::placeholder {
+    color: #f0ffff94;
+}
+
+.campodetexto > p {
+    color: white;
+    margin: auto;
+    padding: 20px 1px 1px;
+}
+
+/* Botão de Envio */
+.btn-login {
+    width: 100%;
+    padding: 16px 0;
+    margin: 25px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #2b134b;
+    background: #00ff88;
+    cursor: pointer;
+    box-shadow: 0 10px 40px -12px #00ff8052;
+}
+
+/* Opções de aceitação de termos */
+.check {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    color: #f0ffffde;
+}
+
+/* Links para páginas de login */
+.pagina-login {
+    text-decoration: none;
+    color: #00ff88;
+}
+
+.cor-entre {
+    text-decoration: none;
+    color: #00ff88;
+}
+
+/* Rodapé (footer) */
+footer {
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    padding: 20px 50px;
+    background: linear-gradient(42deg, #00FF88 2%, #00a85a 10%, #2e263f 42%);
+    box-sizing: border-box;
+    color: aliceblue;
+}
+
+footer > h2 {
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 950px) {
+    .card-login {
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .login-principal {
+        flex-direction: column;
+
+    }
+
+    .left-login>h1 {
+        display: none;
+    }
+
+    .left-login {
+        width: 100%;
+        height: auto;
+    }
+
+    .right-login {
+        width: 100%;
+        height: auto;
+    }
+
+    .left-login-image {
+        width: 50vw;
+    }
+
+    .card-login {
+        width: 90%;
+    }
+}

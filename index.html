@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Assets/style.css"> 
+    <link rel="icon" href="./Img/logoNuvem.png"> 
+    <title>Techflix</title> 
+</head>
+
+<body>
+    <section> <!-- Sessão de navegação -->
+        <header>
+            <div> <!-- Barra de pesquisa -->
+                <label for="busca"><img class="lupa-img" src="./Img/lupa2.png" alt="lupa" width="25px"></label>
+                <input id="busca" type="search" placeholder="Busque seu filme!">
+            </div>
+            <a href="index.html" class="logo"> <!-- Link para a página inicial -->
+                <img src="./Img/logo.png" width="250px"> <!-- Logo -->
+            </a>
+            <nav> <!-- Barra de navegação -->
+                <div class="links">
+                    <ul class="nav-itens">
+                        <li><a href="sobrenos.html">Sobre</a></li>
+                        <li><a href="pag-planos.html">Planos</a></li> 
+                        <li><a href="catalogo.html">Catálogo</a></li> 
+                    </ul>
+                </div>
+                <div class="btn"> <!-- Botões de login e cadastro -->
+                    <a href="login.html">
+                        <button class="login">LOGIN</button> <!-- Botão "LOGIN" -->
+                    </a>
+                    <a href="cadastro.html">
+                        <button class="cadastro">CADASTRO</button> <!-- Botão "CADASTRO" -->
+                    </a>
+                </div>
+            </nav>
+        </header>
+    </section>
+    <main>
+        <section> <!-- Sessão de banner -->
+            <div class="conteudo">
+                <div class="slides">
+                    <!-- Slides do banner -->
+                    <input type="radio" name="slide" id="slide1" checked>
+                    <input type="radio" name="slide" id="slide2">
+                    <input type="radio" name="slide" id="slide3">
+                    <input type="radio" name="slide" id="slide4">
+
+                    <div class="slide s1">
+                        <img src="./Img/mr robot 2.jpg" alt="mr-robot"> <!-- Imagem do slide 1 -->
+                    </div>
+
+                    <div class="slide">
+                        <img src="./Img/A rede social.jpg" alt="a rede social"> <!-- Imagem do slide 2 -->
+                    </div>
+
+                    <div class="slide">
+                        <img src="./Img/matrix 3.jpg" alt="teste"> <!-- Imagem do slide 3 -->
+                    </div>
+
+                    <div class="slide">
+                        <img src="./Img/jogo da imitação 2.jpg" alt="teste"> <!-- Imagem do slide 4 -->
+                    </div>
+                </div>
+
+                <div class="navegacao">
+                    <!-- Navegação dos slides -->
+                    <label class="barra" for="slide1"></label>
+                    <label class="barra" for="slide2"></label>
+                    <label class="barra" for="slide3"></label>
+                    <label class="barra" for="slide4"></label>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Descubra um universo cheio de conhecimento e entretenimento para você! Nós, da TechFlix, ficamos muito
+                felizes que vocês estejam aqui!</h2>
+        </section>
+
+        <section> <!-- Sessão de tabela de filmes -->
+            <table> <!-- Tabela de filmes -->
+                <thead>
+                    <tr id="descricoes-tabela"> <!-- Descrição dos filmes -->
+                        <th>Mais populares</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="poster-matrix"> <!-- Filme "Matrix" -->
+                            <!-- Vídeo incorporado para "Matrix Resurrections" -->
+                            <ul class="video">
+                                <iframe width="420" height="240" src="./Vídeo/MATRIX 4 RESURRECTIONS Trailer Brasileiro Legendado (2021) (1).mp4" sandbox></iframe>
+                            </ul>
+                        </td>
+                        <td class="texto"><strong>Matrix Resurrections</strong>
+                            <br>Se o Sr. Anderson, conhecido como Neo, aprendeu alguma coisa é que a escolha, mesmo sendo uma
+                            ilusão, é a única maneira de sair - ou entrar - da Matrix. Ele sabe o que precisa fazer, mas
+                            ainda
+                            não descobriu que a Matrix está mais forte e perigosa.
+                            <br><br>Filme &nbsp; ∙ &nbsp; 2021 &nbsp; ∙ &nbsp; 14 &nbsp; ∙ &nbsp; 2h 28 min &nbsp;∙<a href="feedback.html">Feedback</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="poster-mrrobot"> <!-- Série "Mr Robot" -->
+                            <!-- Vídeo incorporado para "Mr. Robot" -->
+                            <ul class="video">
+                                <iframe width="420" height="240" src="./Vídeo/Mr  Robot  Trailer Oficial - Legendado [PT-BR].mp4" sandbox></iframe>
+                            </ul>
+                        </td>
+                        <td class="texto"><strong>Mr. Robot</strong>
+                            <br>Elliot é um jovem programador que trabalha como engenheiro de segurança virtual durante o dia, e 
+                            como hacker vigilante durante a noite. Elliot se vê em uma encruzilhada quando é recrutado para
+                            destruir a firma que ele é pago para proteger.
+                            <br><br>Série &nbsp; ∙ &nbsp; 2015 &nbsp; ∙ &nbsp; 16 &nbsp; ∙ &nbsp; 49 min &nbsp;∙<a href="feedback.html">Feedback</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="poster-rede"> <!-- Filme "A Rede Social" -->
+                            <!-- Vídeo incorporado para "A Rede Social" -->
+                            <ul class="video">
+                                <iframe width="420" height="240" src="./Vídeo/Trailer Oficial Português - A REDE SOCIAL.mp4" sandbox></iframe>
+                            </ul>
+                        </td>
+                        <td class="texto"><strong>A Rede Social</strong>
+                            <br>Mark Zuckerberg, estudante de Harvard, decide trabalhar na ideia de uma rede de
+                            relacionamento dentro do campus. Seis anos e 500 milhões de amigos depois, ele se torna um jovem bilionário, um dos
+                            homens mais poderosos do planeta. Todavia, o sucesso do Facebook lhe acarreta complicações na vida social e amorosa.
+                            <br><br>Filme &nbsp; ∙ &nbsp; 2010 &nbsp; ∙ &nbsp; 14 &nbsp; ∙ &nbsp 2h &nbsp;∙<a href="feedback.html">Feedback</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="poster-imitacao"> <!-- Filme "O Jogo da Imitação" -->
+                            <!-- Vídeo incorporado para "O Jogo da Imitação" -->
+                            <ul class="video">
+                                <iframe width="420" height="240" src="./Vídeo/O Jogo da Imitação Trailer Oficial Legendado (2015) - Benedict Cumberbatch HD.mp4" sandbox></iframe>
+                            </ul>
+                        </td>
+                        <td class="texto"><strong>O Jogo da Imitação</strong>
+                            <br>Filme sobre Alan Turing, o gênio matemático que ajudou a decifrar os códigos usados pelos
+                            nazistas durante a Segunda Guerra Mundial.
+                            <br><br>Filme &nbsp; ∙ &nbsp; 2014 &nbsp; ∙ &nbsp; 12 &nbsp; ∙ &nbsp; 1 h 54 min &nbsp;∙<a href="feedback.html">Feedback</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <h2>Todos os direitos reservados a TechFlix</h2> <!-- Rodapé da página -->
+    </footer>
+</body>
+
+</html>

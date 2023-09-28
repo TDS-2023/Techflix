@@ -1,0 +1,219 @@
+/* Importando a fonte */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Roboto:wght@300;400&display=swap');
+
+/* Reset CSS padrão e configurações globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais do corpo da página */
+body {
+    height: 100vh;
+    width: 100%;
+    background: #201b2c;
+    overflow-x: hidden;
+}
+
+/* Estilos do cabeçalho */
+header {
+    width: 100%;
+    display: flex;
+    padding: 15px 50px;
+    background-color: #00ff88;
+    background: linear-gradient(42deg, #00FF88 2%, #00a85a 10%, #2e263f 42%);
+    justify-content: space-between;
+    box-sizing: border-box;
+    color: aliceblue;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Estilos do logo */
+.logo {
+    position: relative;
+    left: 110px;
+}
+
+/* Estilos da barra de navegação */
+nav {
+    display: flex;
+    font-weight: bold;
+    align-items: center;
+    color: #202020;
+}
+
+/* Estilos dos itens de navegação */
+.nav-itens {
+    list-style: none;
+    display: flex;
+}
+
+/* Estilos dos botões de cadastro e login */
+.cadastro,
+.login {
+    padding: 5px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    color: #202020;
+    background-color: #00FF88;
+    font-weight: bold;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+/* Estilos do campo de busca */
+#busca {
+    display: inline;
+    margin-left: 15px;
+    outline: none;
+    border-radius: 5px;
+    padding: 10px;
+    padding-right: 10px;
+    background-color: #202020;
+    color: white;
+    border: none;
+}
+
+/* Estilos do texto de espaço reservado no campo de busca */
+#busca::placeholder {
+    color: #f0ffff94;
+}
+
+/* Estilos dos links de navegação */
+a {
+    color: white;
+    text-decoration: none;
+    transition: 0.6s ease-in-out;
+    margin-left: 15px;
+    font-size: 18px;
+}
+
+/* Estilos dos links de navegação ao passar o mouse sobre eles */
+a:hover {
+    color: #00FF88;
+}
+
+/* Estilos dos botões de cadastro e login ao passar o mouse sobre eles */
+.cadastro:hover,
+.login:hover {
+    opacity: 1;
+}
+
+/* Estilos da imagem da lupa na barra de pesquisa */
+.lupa-img {
+    position: relative;
+    top: 10px;
+}
+
+main{
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Estilos do título 'Feedback' */
+.avaliacao > h2 {
+    padding-bottom: 30px;
+    font-size: 35px;
+    color: white;
+}
+
+/* Estilos da seção de avaliação */
+.avaliacao {
+    position: absolute;
+    top: 50px;
+    transform: translate(120%, 15%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 100px 150px;
+    background: #2f2841;
+    width: 30%;
+    border-radius: 15px;
+}
+
+/* Estilos da pontuação da avaliação */
+#rating {
+    color: white;
+    position: relative;
+    right: -10px;
+    bottom: -4px;
+}
+
+/* Estilos das estrelas de avaliação */
+.avaliacao-estrelas {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+/* Estilos dos campos de entrada de texto */
+#nome, #email, #mensagem {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: #514869;
+    color: #f0ffffde;
+    font-size: 12pt;
+    box-shadow: 0 10px 40px #00000056;
+    outline: none;
+    box-sizing: border-box;
+}
+
+/* Estilos das etiquetas dos campos de entrada de texto */
+.avaliacao>label {
+    color: white;
+    padding: 10px;
+}
+
+/* Estilos do botão 'Enviar' */
+.btn-javascript {
+    font-size: 12px;
+    letter-spacing: 2px;
+    outline: none;
+    padding: 20px;
+    width: 100%;
+    border-radius: 10px;
+    background: #00ff88;
+    cursor: pointer;
+    margin: 15px auto;
+}
+
+/* Estilos do rodapé */
+footer {
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    top: 850px;
+    width: 100vw;
+    text-align: center;
+    padding: 20px 50px;
+    background: linear-gradient(42deg, #00FF88 2%, #00a85a 10%, #2e263f 42%);
+    box-sizing: border-box;
+    color: aliceblue;
+}
+
+
+/* Estilos do texto do rodapé */
+footer>h2 {
+    font-size: 20px;
+}
+
+/* Estilos para dispositivos com largura máxima de 950px */
+@media only screen and (max-width: 950px) {
+    div {
+        width: 100%;
+    }
+}
+
+/* Estilos para dispositivos com largura máxima de 600px */
+@media only screen and (max-width: 600px) {
+    body {
+        box-sizing: border-box;
+    }
+
+    div>input {
+        width: 200%;
+    }
+}

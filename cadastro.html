@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Assets/cadastro.css">
+    <link rel="icon" href="./Img/logoNuvem.png">
+    <title>Techflix - Cadastro</title>
+</head>
+
+<body>
+    <section> <!--Sessão nav-->
+        <header>
+            <div><!--barra de pesquisa-->
+                <label for="busca"><img class="lupa-img" src="./Img/lupa2.png" alt="lupa" width="25px"></label>
+                <input id="busca" type="search" placeholder="Busque seu filme!">
+            </div>
+            <a href="index.html" class="logo">
+                <img src="./Img/logo.png" width="250px"><!--logo-->
+            </a>
+            <nav> <!--Sessão nav-->
+                <div class="links">
+                    <ul class="nav-itens">
+                        <li><a href="sobrenos.html">Sobre</a></li>
+                        <li><a href="pag-planos.html">Planos</a></li>
+                        <li><a href="catalogo.html">Catálogo</a></li>
+                    </ul>
+                </div>
+                <div class="btn"><!--botoes de login e cadastro-->
+                    <a href="login.html">
+                        <button class="login">LOGIN</button>
+                    </a>
+                    <a href="cadastro.html">
+                        <button class="cadastro">CADASTRO</button>
+                    </a>
+                </div>
+            </nav>
+        </header>
+    </section>
+    <main>
+        <section> <!--Sessão login-->
+            <div class="login-principal"> <!--div criada para o login principal-->
+                <div class="movimentar">
+                    <div class="left-login">
+                        <h1>Seu cadastro é um ingresso para uma jornada de conhecimento e entretenimento digital!</h1>
+                    </div>
+                    <div class="right-login">
+                        <div class="card-login"> <!--card do login-->
+                            <h1>CADASTRE-SE AQUI</h1>
+                            <div class="campodetexto">
+                                <label for="Nome">Usuário</label>
+                                <input type="text" name="usuario" placeholder="Digite seu usuário aqui" id="usuario"
+                                    required>
+                            </div>
+                            <div class="campodetexto">
+                                <label for="email">Email</label>
+                                <input type="text" name="usuario" placeholder="Informe seu email" id="email" required>
+                            </div>
+                            <div class="campodetexto">
+                                <label for="senha">Senha</label>
+                                <input type="password" name="usuario" placeholder="Crie uma senha" id="senha" required>
+                            </div>
+                            <div class="campodetexto">
+                                <label for="data">Informe sua data de nascimento</label>
+                                <input type="date" name="usuario" placeholder="dd/mm/aaaa" id="data" required>
+                            </div>
+                            <div class="campodetexto">
+                                <label for="cidade">Cidade</label>
+                                <input type="text" name="usuario" placeholder="Informe sua cidade" id="cidade" required>
+                            </div>
+                            <div class="campodetexto">
+                                <label for="pais">País</label>
+                                <input type="text" name="usuario" placeholder="Digite seu país" id="país" required>
+                            </div>
+                            <div class="campodetexto">
+                                <div class="check">
+                                    <input type="checkbox" name="usuario" id="checkbox" required>
+                                    <label for="checkbox">Li e aceito com os termos de uso e politica de
+                                        privacidade</label>
+                                </div>
+                                <p>Já tem uma conta? <a class="cor-entre" href="login.html">Entre</a></p>
+                            </div>
+                            <button class="btn-login">Enviar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <h2>Todos os direitos reservados a TechFlix</h2>
+    </footer>
+</body>
+
+</html>

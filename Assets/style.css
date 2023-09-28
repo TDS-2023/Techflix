@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Roboto:wght@300;400&display=swap');
+
+/* Reset CSS padrão e configurações globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos globais */
+body {
+    background-color: #201e2b;
+    height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+}
+/* Estilos do cabeçalho */
+header {
+    width: 100%;
+    display: flex;
+    padding: 15px 50px;
+    background-color: #00ff88;
+    background: linear-gradient(42deg, #00FF88 2%, #00a85a 10%, #2e263f 42%);
+    justify-content: space-between;
+    box-sizing: border-box;
+    color: aliceblue;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Estilos do logo */
+.logo {
+    position: relative;
+    left: 110px;
+}
+
+/* Estilos da barra de navegação */
+nav {
+    display: flex;
+    font-weight: bold;
+    align-items: center;
+    color: #202020;
+}
+
+/* Estilos dos itens de navegação */
+.nav-itens {
+    list-style: none;
+    display: flex;
+}
+
+/* Estilos dos botões de cadastro e login */
+.cadastro,
+.login {
+    padding: 5px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    color: #202020;
+    background-color: #00FF88;
+    font-weight: bold;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+/* Estilos do campo de busca */
+#busca {
+    display: inline;
+    margin-left: 15px;
+    outline: none;
+    border-radius: 5px;
+    padding: 10px;
+    padding-right: 10px;
+    background-color: #202020;
+    color: white;
+    border: none;
+}
+
+/* Estilos do texto de espaço reservado no campo de busca */
+#busca::placeholder {
+    color: #f0ffff94;
+}
+
+/* Estilos dos links de navegação */
+a {
+    color: white;
+    text-decoration: none;
+    transition: 0.6s ease-in-out;
+    margin-left: 15px;
+    font-size: 18px;
+}
+
+/* Estilos dos links de navegação ao passar o mouse sobre eles */
+a:hover {
+    color: #00FF88;
+}
+
+/* Estilos dos botões de cadastro e login ao passar o mouse sobre eles */
+.cadastro:hover,
+.login:hover {
+    opacity: 1;
+}
+
+/* Estilos da imagem da lupa na barra de pesquisa */
+.lupa-img {
+    position: relative;
+    top: 10px;
+}
+
+main{
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Slider */
+.conteudo {
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    top: -550px;
+    right: 950px;
+    transform: translate(50%, 50%);
+}
+
+.navegacao {
+    position: relative;
+    bottom: 50px;
+    left: 90%;
+    transform: translate(-50%);
+    display: flex;
+}
+
+.barra {
+    width: 70px;
+    height: 17px;
+    border: 2px solid white;
+    margin: 6px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.barra:hover {
+    background-color: #00FF88;
+    transition: 0.6s;
+}
+
+input {
+    display: none;
+}
+
+.slides {
+    display: flex;
+    width: 500%;
+    height: 100%;
+}
+
+.slide {
+    width: 20%;
+    transition: 0.6s;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+}
+
+#slide1:checked~.s1 {
+    margin-left: 0%;
+}
+
+#slide2:checked~.s1 {
+    margin-left: -20%;
+}
+
+#slide3:checked~.s1 {
+    margin-left: -40%;
+}
+
+#slide4:checked~.s1 {
+    margin-left: -60%;
+}
+
+section > h2 {
+    position: relative;
+    top: 50px;
+    text-align: center;
+    color: white;
+}
+
+/* Tabela de filmes */
+table {
+    position: relative;
+    top: 200px;
+    left: 300px;
+    border-collapse: collapse;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    max-width: 1400px;
+}
+
+#descricoes-tabela {
+    color: white;
+}
+
+th {
+    margin-bottom: 15px;
+    font-size: 36px;
+    text-align: center;
+}
+
+tr {
+    display: flex;
+    text-align: left;
+    font-size: 20px;
+    color: white;
+    align-content: center;
+    box-sizing: border-box;
+}
+
+.texto {
+    padding: 0px 60px;
+}
+
+strong {
+    font-size: 32px;
+    line-height: 100px;
+    color: #00ff88;
+}
+
+.poster-matrix {
+    background-image: url(../Img/matrix2.jpg);
+    display: block;
+    height: 240px;
+    background-position: center;
+    background-size: cover;
+    opacity: 1;
+    margin-bottom: 100px;
+}
+
+.poster-mrrobot {
+    background-image: url(../Img/mr-robot.jpg);
+    display: block;
+    height: 240px;
+    background-position: center;
+    background-size: cover;
+    opacity: 1;
+    margin-bottom: 100px;
+}
+
+.poster-rede {
+    background-image: url(../Img/rede.png);
+    display: block;
+    height: 240px;
+    background-position: center;
+    background-size: cover;
+    opacity: 1;
+    margin-bottom: 100px;
+}
+
+.poster-imitacao {
+    background-image: url(../Img/imitacao.png);
+    height: 240px;
+    display: block;
+    background-position: center;
+    background-size: cover;
+    opacity: 1;
+    margin-bottom: 100px;
+}
+
+.video {
+    opacity: 0;
+}
+
+.video:hover {
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    opacity: 1;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    
+    to {
+        opacity: 1;
+    }
+}
+
+/* Rodapé */
+footer {
+    position: relative;
+    top: 115px;
+    width: 100%;
+    text-align: center;
+    padding: 20px 50px;
+    padding-top: 43px;
+    background: linear-gradient(42deg, #00FF88 2%, #00a85a 10%, #2e263f 42%);
+    box-sizing: border-box;
+    color: aliceblue;
+}
+
+footer>h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}

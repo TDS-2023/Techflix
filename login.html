@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Assets/login.css">
+    <link rel="icon" href="./Img/logoNuvem.png">
+    <title>Techflix - Login</title>
+</head>
+
+<body>
+    <section> <!--Sessão nav-->
+        <header>
+            <div><!--barra de pesquisa-->
+                <label for="busca"><img class="lupa-img" src="./Img/lupa2.png" alt="lupa" width="25px"></label>
+                <input id="busca" type="search" placeholder="Busque seu filme!">
+            </div>
+            <a href="index.html" class="logo">
+                <img src="./Img/logo.png" width="250px"><!--logo-->
+            </a>
+            <nav> <!--Sessão nav-->
+                <div class="links">
+                    <ul class="nav-itens">
+                        <li><a href="sobrenos.html">Sobre</a></li>
+                        <li><a href="pag-planos.html">Planos</a></li>
+                        <li><a href="catalogo.html">Catálogo</a></li>
+                    </ul>
+                </div>
+                <div class="btn"><!--botoes de login e cadastro-->
+                    <a href="login.html">
+                        <button class="login">LOGIN</button>
+                    </a>
+                    <a href="cadastro.html">
+                        <button class="cadastro">CADASTRO</button>
+                    </a>
+                </div>
+            </nav>
+        </header>
+    </section>
+    <main>
+        <div class="login-principal"> <!--div criada para o login principal-->
+            <div class="left-login">
+                <h1>Faça login e entre em uma jornada de conhecimento tecnológico!</h1>
+                <img src="./Img/animação.svg" class="left-login-image" alt="animação">
+            </div>
+            <div class="right-login">
+                <div class="card-login"> <!--card do login-->
+                    <h1>LOGIN</h1>
+                    <div class="campodetexto">
+                        <label for="usuario">Usuário</label>
+                        <input type="text" name="usuario" placeholder="Usuário" id="usuario" required>
+                    </div>
+                    <div class="campodetexto">
+                        <label for="senha">Senha</label>
+                        <input type="password" name="senha" placeholder="Senha" id="senha" required>
+                        <p>Ainda não é registrado? Registre-se clicando<a class="redirecionar-cadastro" href="cadastro.html">aqui!</a></p>
+                    </div>
+                    <button class="btn-login" onclick="logar()">Login</button>
+                    <p id="mensagem"></p>
+                </div>
+            </div>
+        </div>
+        <script src="./Assets/main.js"></script>
+    </main>
+    <footer>
+        <h2>Todos os direitos reservados a TechFlix</h2>
+    </footer>
+</body>
+
+</html>
