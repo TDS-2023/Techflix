@@ -7,8 +7,8 @@ function logar() {
 
     if (usuario == nome && senha == "1234") {
         mensagemElement.textContent = "Bem-vindo de volta, " + nome + "!";
-        mensagemElement.style.color = "green";
-        mensagemElement.style.fontSize = "25px";
+        mensagemElement.style.color = "#00ff88";
+        mensagemElement.style.fontSize = "30px";
         
         setTimeout(function () {
             location.href = "index.html";
@@ -18,6 +18,6 @@ function logar() {
     else {
         mensagemElement.textContent = "Dados incorretos, tente novamente.";
         mensagemElement.style.color = "red";
-        mensagemElement.style.fontSize = "25px";
+        mensagemElement.style.fontSize = "30px";
     }
 }
