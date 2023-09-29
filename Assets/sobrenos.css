@@ -157,7 +157,7 @@ main{
 
 .diferenciais {
     position: relative;
-    top: 210px;
+    top: 184px;
     background-color: #3d2b63;
     width: 80%;
     height: 160%;
@@ -175,7 +175,7 @@ main{
     display: flex;
     flex-direction: column;
     top: -220px;
-    right: 20px;
+    right: 40px;
 }
 
 .diferenciais > ul {
@@ -188,7 +188,6 @@ main{
     position: relative;
     top: 66px;
 }
-
 
 /* Estilos do rodapé */
 footer {
