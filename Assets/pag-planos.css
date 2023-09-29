@@ -29,7 +29,7 @@ header {
 /* Estilos do logo */
 .logo {
     position: relative;
-    left: 80px;
+    left: 110px;
 }
 
 /* Estilos da barra de navegação */
@@ -111,9 +111,9 @@ main{
 /* Estilos para o botão body */
 .botao-body {
     border: none;
-    position: absolute;
+    position: relative;
     text-align: center;
-    top: 80%;
+    top: 35%;
     border-radius: 10px;
     padding: 15px;
     padding-left: 100px;
@@ -149,16 +149,11 @@ h2 {
     color: rgb(255, 255, 255);
 }
 
-.secao4 {
-    position: absolute;
-    top: -100px;
-    left: -80px;
-}
-
 /* Estilos para a seção de planos */
 .secao4-div {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     padding: 160px;
     text-align: center;
     width: 78%;
@@ -197,10 +192,6 @@ h2 {
     font-size: 300%;
 }
 
-p {
-    font-size: 18px;
-}
-
 /* Estilos para a descrição dos planos */
 .descricao1, .descricao2, .descricao3 {
     position: relative;
@@ -213,7 +204,6 @@ p {
 
 /* Estilos para o rodapé */
 footer {
-    margin-top: 50%;
     font-family: 'Roboto', sans-serif;
     width: 100vw;
     text-align: center;
