@@ -143,21 +143,50 @@ main{
     flex-direction: row;
 }
 
-.h1-quemsomos {
+.h1-quemsomos{
     background-color: #3d2b63;
-    width: 50%;
-    height: 200%;
-    border-radius: 100%;
+    width: 80%;
+    height: 160%;
+    border-radius: 20%;
     position: relative;
     display: flex;
     flex-direction: column;
     top: -220px;
-    right: -20px;
+    right: -30px;
+}
+
+.diferenciais {
+    position: relative;
+    top: 220px;
+    background-color: #3d2b63;
+    width: 80%;
+    height: 160%;
+    border-radius: 20%;
+    display: flex;
+    flex-direction: column;
+}
+
+.nossa-missao {
+    background-color: #3d2b63;
+    width: 80%;
+    height: 160%;
+    border-radius: 20%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    top: -220px;
+    right: 20px;
+}
+
+.diferenciais > ul {
+    position: relative;
+    top: 100px;
+    left: 90px;
 }
 
 .h1-quemsomos > h1 {
     position: relative;
-    padding-top: 100px;
+    top: 66px;
 }
 
 
