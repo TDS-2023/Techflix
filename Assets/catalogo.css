@@ -15,8 +15,6 @@ body {
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   background-color: #201b2c;
   overflow-x: hidden;
 }
@@ -118,27 +116,25 @@ main{
 
 /* Estilos da seção de banner */
 #banner {
-  position: relative;
-  width: 100vw;
+  position: absolute;
+  width: 100%;
   display: flex;
+  justify-content: space-between;
 }
 
 /* Estilos da imagem do banner */
 .imagem_banner {
   display: flex;
-  width: 100%;
+  width: 50%;
   justify-content: right;
-  position: absolute;
+  position: relative;
 }
 
 /* Estilos do texto do banner */
 .texto_banner {
-  display: flex;
-  flex-direction: column;
   padding: 30px;
   margin-top: 150px;
   color: white;
-  position: absolute;
 }
 
 .texto_banner > h1 {
@@ -159,9 +155,9 @@ strong {
 /* Estilos do container principal */
 #container {
   margin-top: 760px;
-  width: 100vw;
+  width: 100%;
   font-size: 26px;
-  position: relative;
+  position: absolute;
   display: flex;
   flex-direction: column;
 }
@@ -169,28 +165,23 @@ strong {
 /* Estilos para as seções de filmes e séries */
 #filmes,
 #series {
-  width: 100vw;
-  justify-content: center;
+  width: 100%;
   display: flex;
+  justify-content: center;
 }
 
 /* Estilos para o título das seções */
 .titulo > h2 {
-  position: absolute;
-  display: flex;
+  position: relative;
   color: white;
-  margin-left: 50px;
-  margin-bottom: 100px;
-  text-align: center;
+  margin-right: -100px;
 }
 
 /* Estilos para os carrosséis de filmes e séries */
 #carrossel_filmes,
 #carrossel_series {
-  display: flex;
-  justify-content: center;
-  padding: 30px 50px 110px;
-  margin-top: 60px;
+  padding: 70px 0px 90px;
+  margin-top: 20px;
   text-align: center;
   max-width: 100vw;
 }
@@ -219,10 +210,9 @@ strong {
 /* Estilos dos botões de navegação do carrossel */
 #botoes_filmes,
 #botoes_series {
-  justify-content: center;
-  display: flex;
   position: absolute;
   align-items: center;
+  margin-top: -125px;
 }
 
 /* Estilos dos botões esquerdo e direito */
@@ -240,16 +230,15 @@ strong {
 /* Estilos do botão esquerdo */
 #botao_esquerdo,
 #botao_esquerdo2 {
-  margin-top: 200px;
+  margin-top: 0px;
   display: none;
-  margin-right: 1650px;
+  margin-left: -70px;
 }
 
 /* Estilos do botão direito */
 #botao_direito,
 #botao_direito2 {
-  margin-top: 200px;
-  margin-left: 1650px;
+  margin-left: 1500px;
 }
 
 /* Estilos dos pôsteres dos filmes e séries */
@@ -277,7 +266,7 @@ button > img:hover {
 footer{
   font-family: 'Roboto', sans-serif;
   width: 100%;
-  margin-top: 50px;
+  margin-top: 1600px;
   text-align: center;
   padding: 20px 50px;
   background: linear-gradient(42deg, #00FF88 2%, #00a85a 10%, #2e263f 42%);
