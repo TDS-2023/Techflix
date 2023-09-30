@@ -2,30 +2,30 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8"> 
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <link rel="stylesheet" href="./Assets/CSS/feedback.css"> 
-    <link rel="icon" href="./Img/logoNuvem.png">
-    <title>Techflix - Feedback</title> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Assets/CSS/feedback.css">
+    <link rel="icon" href="../Img/logoNuvem.png">
+    <title>Techflix - Feedback</title>
 </head>
 
 <body>
     <section> <!-- Sessão de navegação -->
         <header>
             <div> <!-- Barra de pesquisa -->
-                <label for="busca"><img class="lupa-img" src="./Img/lupa2.png" alt="lupa" width="25px"></label>
+                <label for="busca"><img class="lupa-img" src="../Img/lupa2.png" alt="lupa" width="25px"></label>
                 <input id="busca" type="search" placeholder="Busque seu filme!">
             </div>
             <a href="index.html" class="logo"> <!-- Link para a página inicial -->
-                <img src="./Img/logo.png" width="250px"> <!-- Logo -->
+                <img src="../Img/logo.png" width="250px"> <!-- Logo -->
             </a>
             <nav> <!-- Barra de navegação -->
                 <div class="links">
                     <ul class="nav-itens">
                         <li><a href="sobrenos.html">Sobre</a></li>
-                        <li><a href="pag-planos.html">Planos</a></li> 
-                        <li><a href="catalogo.html">Catálogo</a></li> 
+                        <li><a href="pag-planos.html">Planos</a></li>
+                        <li><a href="catalogo.html">Catálogo</a></li>
                     </ul>
                 </div>
                 <div class="btn"> <!-- Botões de login e cadastro -->
@@ -42,7 +42,7 @@
     <main>
         <section> <!-- Seção de feedback do site -->
             <form action="contato.html">
-                <div class="avaliacao"> 
+                <div class="avaliacao">
                     <h2>Feedback</h2>
                     <label for="nome">Nome:</label>
                     <input type="text" id="nome" autocomplete="none" placeholder="Nome" required>
@@ -51,23 +51,29 @@
                     <label for="msg">Mensagem</label>
                     <input type="text" id="mensagem" autocomplete="none" placeholder="Mensagem" required>
                     <div class="avaliacao-estrelas">
-                        <a href="javascript:void(0)" onclick="Avaliar(1)">
-                            <img src="img/star0.png" id="s1"></a>
-                        <a href="javascript:void(0)" onclick="Avaliar(2)">
-                            <img src="img/star0.png" id="s2"></a>
-                        <a href="javascript:void(0)" onclick="Avaliar(3)">
-                            <img src="img/star0.png" id="s3"></a>
-                        <a href="javascript:void(0)" onclick="Avaliar(4)">
-                            <img src="img/star0.png" id="s4"></a>
-                        <a href="javascript:void(0)" onclick="Avaliar(5)">
-                            <img src="img/star0.png" id="s5"></a>
+                        
+                        <a href="javascript:void(0)" onclick="Avaliar(1);">
+                            <img src="../Img/star0.png" id="s1">
+                        </a>
+                        <a href="javascript:void(0)" onclick="Avaliar(2);">
+                            <img src="../Img/star0.png" id="s2">
+                        </a>
+                        <a href="javascript:void(0)" onclick="Avaliar(3);">
+                        <img src="../Img/star0.png" id="s3">
+                        </a>
+                        <a href="javascript:void(0)" onclick="Avaliar(4);">
+                            <img src="../Img/star0.png" id="s4">
+                        </a>
+                        <a href="javascript:void(0)" onclick="Avaliar(5);">
+                            <img src="../Img/star0.png" id="s5">
+                        </a>
                         <p id="rating">0</p>
                     </div>
                     <button class="btn-javascript">Enviar</button>
                 </div>
             </form>
         </section>
-        <script src="./Assets/JS/estrela.js"></script> 
+        <script src="../Assets/JS/estrela.js"></script>
     </main>
     <footer>
         <h2>Todos os direitos reservados a TechFlix</h2>

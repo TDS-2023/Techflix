@@ -228,7 +228,7 @@ strong {
 }
 
 .poster-matrix {
-    background-image: url(../Img/matrix2.jpg);
+    background-image: url(../../Img/matrix2.jpg);
     display: block;
     height: 240px;
     background-position: center;
@@ -238,7 +238,7 @@ strong {
 }
 
 .poster-mrrobot {
-    background-image: url(../Img/mr-robot.jpg);
+    background-image: url(../../Img/mr-robot.jpg);
     display: block;
     height: 240px;
     background-position: center;
@@ -248,7 +248,7 @@ strong {
 }
 
 .poster-rede {
-    background-image: url(../Img/rede.png);
+    background-image: url(../../Img/rede.png);
     display: block;
     height: 240px;
     background-position: center;
@@ -258,7 +258,7 @@ strong {
 }
 
 .poster-imitacao {
-    background-image: url(../Img/imitacao.png);
+    background-image: url(../../Img/imitacao.png);
     height: 240px;
     display: block;
     background-position: center;
