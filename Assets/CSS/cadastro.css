@@ -111,7 +111,7 @@ main{
 }
 
 /* Estilos para a seção de cadastro */
-.login-principal {
+.cadastro-principal {
     width: 100vw;
     height: 100vh;
     background: #201b2c;
@@ -127,13 +127,12 @@ main{
     width: 100vw;
     height: 100vh;
     background: #201b2c;
-    display: flex;
     justify-content: center;
     align-items: center;
 }
 
 /* Lado esquerdo do cadastro */
-.left-login {
+.left-cadastro {
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -142,14 +141,13 @@ main{
     flex-direction: column;
 }
 
-.left-login > h1 {
+.left-cadastro > h1 {
     font-size: 1.5vw;
     color: white;
-    margin-bottom: 20px;
 }
 
 /* Lado direito do cadastro */
-.right-login {
+.right-cadastro {
     width: 50vw;
     height: 100vh;
     display: flex;
@@ -159,8 +157,7 @@ main{
 }
 
 /* Cartão de login */
-.card-login {
-    margin-bottom: 15px;
+.card-cadastro {
     width: 60%;
     display: flex;
     justify-content: center;
@@ -172,7 +169,7 @@ main{
     box-shadow: 0 10px 40px #00000056;
 }
 
-.card-login > h1 {
+.card-cadastro > h1 {
     color: #00ff88;
     font-weight: 800;
     margin: 0;
@@ -217,7 +214,7 @@ main{
 }
 
 /* Botão de Envio */
-.btn-login {
+.btn-cadastro {
     width: 100%;
     padding: 16px 0;
     margin: 25px;
@@ -269,7 +266,7 @@ footer > h2 {
 }
 
 @media only screen and (max-width: 950px) {
-    .card-login {
+    .card-cadastro {
         width: 85%;
     }
 }
@@ -280,25 +277,25 @@ footer > h2 {
 
     }
 
-    .left-login>h1 {
+    .left-cadastro > h1 {
         display: none;
     }
 
-    .left-login {
+    .left-cadastro {
         width: 100%;
         height: auto;
     }
 
-    .right-login {
+    .right-cadastro {
         width: 100%;
         height: auto;
     }
 
-    .left-login-image {
+    .left-cadastro-image {
         width: 50vw;
     }
 
-    .card-login {
+    .card-cadastro {
         width: 90%;
     }
 }
