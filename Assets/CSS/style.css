@@ -287,6 +287,10 @@ strong {
     }
 }
 
+.borda-feedback {
+    border-bottom: 1px solid #00ff88;
+}
+
 /* Rodapé */
 footer {
     font-family: 'Roboto', sans-serif;

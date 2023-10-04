@@ -211,6 +211,7 @@ main{
     color: white;
     margin: auto;
     padding: 20px 1px 1px;
+    position: relative;
 }
 
 /* Botão de Envio */
@@ -232,9 +233,11 @@ main{
 
 /* Opções de aceitação de termos */
 .check {
+    position: relative;
+    left: 30px;
     display: flex;
     flex-direction: row;
-    gap: 30px;
+    gap: 10px;
     color: #f0ffffde;
 }
 
@@ -245,6 +248,7 @@ main{
 }
 
 .cor-entre {
+    margin-left: 2px;
     text-decoration: none;
     color: #00ff88;
 }

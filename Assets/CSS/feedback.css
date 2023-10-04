@@ -170,6 +170,7 @@ main{
 
 /* Estilos do botão 'Enviar' */
 .btn-javascript {
+    font-weight: 800;
     font-size: 12px;
     letter-spacing: 2px;
     outline: none;
