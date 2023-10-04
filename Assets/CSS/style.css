@@ -289,18 +289,17 @@ strong {
 
 /* Rodapé */
 footer {
+    font-family: 'Roboto', sans-serif;
     position: relative;
-    top: 115px;
-    width: 100%;
+    top: 136px;
+    width: 100vw;
     text-align: center;
     padding: 20px 50px;
-    padding-top: 43px;
     background: linear-gradient(42deg, #00FF88 2%, #00a85a 10%, #2e263f 42%);
     box-sizing: border-box;
     color: aliceblue;
 }
 
 footer>h2 {
-    font-family: 'Roboto', sans-serif;
     font-size: 20px;
 }
