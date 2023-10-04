@@ -10,6 +10,9 @@
 
 /* Estilos do corpo da página */
 body {
+    background: #201b2c;
+    width: 100vw;
+    height: 100vh;
     overflow-x: hidden;
 }
 
@@ -127,11 +130,8 @@ main{
 
 /* Estilos da seção de login com movimentação */
 .movimentar {
-    display: flex;
+    margin-top: 200px;
     flex-direction: column;
-    width: 100vw;
-    height: 100vh;
-    background: #201b2c;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -264,6 +264,7 @@ main{
 
 /* Rodapé */
 footer {
+    margin-top: 129px;
     font-family: 'Roboto', sans-serif;
     position: relative;
     width: 100%;

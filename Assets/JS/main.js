@@ -9,7 +9,7 @@ function logar() {
         mensagemElement.style.fontSize = "30px";
         
         setTimeout(function () {
-            location.href = "index.html";
+            location.href = "../../index.html";
         }, 5000);
     }
 

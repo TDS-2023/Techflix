@@ -11,6 +11,9 @@
 
 /* Estilos do corpo da página */
 body {
+    width: 100vw;
+    height: 100vh;
+    background: #201b2c;
     overflow-x: hidden;
 }
 
@@ -128,11 +131,8 @@ main{
 
 /* Estilos da seção de login com movimentação */
 .movimentar {
-    display: flex;
+    margin-top: 200px;
     flex-direction: column;
-    width: 100vw;
-    height: 100vh;
-    background: #201b2c;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -149,7 +149,7 @@ main{
 }
 
 .left-login>h1 {
-    font-size: 2vw;
+    /* font-size: 2vw; */
     color: #77ffc0;
     margin-bottom: 20px;
 }
@@ -186,6 +186,7 @@ main{
     color: #00ff88;
     font-weight: 800;
     margin: 0;
+    font-size: 32px;
 }
 
 /* Estilos dos campos de texto */
@@ -265,6 +266,7 @@ main{
 
 /* Rodapé */
 footer {
+    margin-top: 129px;
     font-family: 'Roboto', sans-serif;
     position: relative;
     width: 100%;
