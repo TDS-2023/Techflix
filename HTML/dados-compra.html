@@ -23,8 +23,8 @@
                 <div class="links">
                     <ul class="nav-itens">
                         <li><a href="sobrenos.html">Sobre</a></li>
-                        <li><a href="pag-planos.html">Planos</a></li> 
-                        <li><a href="catalogo.html">Catálogo</a></li> 
+                        <li><a href="pag-planos.html">Planos</a></li>
+                        <li><a href="catalogo.html">Catálogo</a></li>
                     </ul>
                 </div>
                 <div class="btn"> <!-- Botões de login e cadastro -->
@@ -40,48 +40,58 @@
     </section>
 
     <main>
-        <div class="login-principal"> <!-- Div criada para o login principal -->
-            <div class="movimentar">
-                <h2 style="color: white; position: relative; top: 1px; font-size: 30px; margin-bottom: 8px;">Plano básico</h2>
-                <div class="right-login">
-                    <div class="card-login"> <!-- Card do login -->
-                        <h1 style="text-align: center;">Informe os dados do seu cartão de crédito ou débito</h1>
-                        <div class="campodetexto">
-                            <label for="Nome">Nome</label>
-                            <input type="text" name="usuario" placeholder="Nome" id="usuario" required> <!-- Campo de Nome -->
-                        </div>
-                        <div class="campodetexto">
-                            <label for="sobrenome">Sobrenome</label>
-                            <input type="text" name="sobrenome" placeholder="Sobrenome" id="email" required> <!-- Campo de Sobrenome -->
-                        </div>
-                        <div class="campodetexto">
-                            <label for="numero-cartao">Numero do cartão</label>
-                            <input type="text" name="numero-cartao" placeholder="Número do cartão" id="numero-cartao" required> <!-- Campo para o número do cartão -->
-                        </div>
-                        <div class="campodetexto">
-                            <label for="data">Informe sua data de nascimento</label>
-                            <input type="date" name="data" placeholder="dd/mm/aaaa" id="data" required> <!-- Campo para a data de nascimento -->
-                        </div>
-                        <div class="campodetexto">
-                            <label for="cvv">CVV</label>
-                            <input type="text" name="cidade" placeholder="CVV" id="cvv" required> <!-- Campo para o CVV do cartão -->
-                        </div>
-                        <div class="campodetexto">
-                            <label for="data-validade">Data de validade</label>
-                            <input type="date" name="data-validade" placeholder="dd/mm/aaaa" id="data-validade"
-                                required> <!-- Campo para a data de validade do cartão -->
-                        </div>
-                        <div class="campodetexto">
-                            <div class="check">
-                                <input type="checkbox" name="check" id="checkbox" required> <!-- Checkbox para aceitar os termos -->
-                                <label for="checkbox">Li e aceito com os termos de uso e política de privacidade</label>
+        <section>
+            <div class="login-principal"> <!-- Div criada para o login principal -->
+                <div class="movimentar">
+                    <h2 style="color: white; position: relative; top: 1px; font-size: 30px; margin-bottom: 8px;">Plano
+                        básico</h2>
+                    <div class="right-login">
+                        <div class="card-login"> <!-- Card do login -->
+                            <h1 style="text-align: center;">Informe os dados do seu cartão de crédito ou débito</h1>
+                            <div class="campodetexto">
+                                <label for="Nome">Nome</label>
+                                <input type="text" name="usuario" placeholder="Nome" id="usuario" required>
+                                <!-- Campo de Nome -->
                             </div>
+                            <div class="campodetexto">
+                                <label for="sobrenome">Sobrenome</label>
+                                <input type="text" name="sobrenome" placeholder="Sobrenome" id="email" required>
+                                <!-- Campo de Sobrenome -->
+                            </div>
+                            <div class="campodetexto">
+                                <label for="numero-cartao">Numero do cartão</label>
+                                <input type="text" name="numero-cartao" placeholder="Número do cartão"
+                                    id="numero-cartao" required> <!-- Campo para o número do cartão -->
+                            </div>
+                            <div class="campodetexto">
+                                <label for="data">Informe sua data de nascimento</label>
+                                <input type="date" name="data" placeholder="dd/mm/aaaa" id="data" required>
+                                <!-- Campo para a data de nascimento -->
+                            </div>
+                            <div class="campodetexto">
+                                <label for="cvv">CVV</label>
+                                <input type="text" name="cidade" placeholder="CVV" id="cvv" required>
+                                <!-- Campo para o CVV do cartão -->
+                            </div>
+                            <div class="campodetexto">
+                                <label for="data-validade">Data de validade</label>
+                                <input type="date" name="data-validade" placeholder="dd/mm/aaaa" id="data-validade"
+                                    required> <!-- Campo para a data de validade do cartão -->
+                            </div>
+                            <div class="campodetexto">
+                                <div class="check">
+                                    <input type="checkbox" name="check" id="checkbox" required>
+                                    <!-- Checkbox para aceitar os termos -->
+                                    <label for="checkbox">Li e aceito com os termos de uso e política de
+                                        privacidade</label>
+                                </div>
+                            </div>
+                            <button class="btn-login">Enviar</button> <!-- Botão de envio do formulário -->
                         </div>
-                        <button class="btn-login">Enviar</button> <!-- Botão de envio do formulário -->
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     </main>
     <footer>
         <h2>Todos os direitos reservados a Techflix</h2>
