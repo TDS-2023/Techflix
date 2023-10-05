@@ -1,9 +1,10 @@
 function logar() {
+    var email = document.getElementById("email").value;
     var usuario = document.getElementById("usuario").value;
     var senha = document.getElementById("senha").value;
     var mensagemElement = document.getElementById("mensagem");
 
-    if (usuario == localStorage.getItem("usuario") && senha == localStorage.getItem("senha")) {
+    if (email == localStorage.getItem("email") && senha == localStorage.getItem("senha") || usuario == localStorage.getItem("usuario")) {
         mensagemElement.textContent = "Bem-vindo de volta, " + localStorage.getItem("usuario") + "!";
         mensagemElement.style.color = "#00ff88";
         mensagemElement.style.fontSize = "30px";
