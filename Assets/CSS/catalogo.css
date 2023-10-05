@@ -199,12 +199,7 @@ strong {
   padding: 30px 25px;
   background: #2e263f;
   border-radius: 8px;
-}
-
-/* Remover a barra de rolagem do carrossel */
-#carrossel::-webkit-scrollbar,
-#carrossel2::-webkit-scrollbar {
-  height: 0;
+  overflow-x: hidden;
 }
 
 /* Estilos dos botões de navegação do carrossel */
