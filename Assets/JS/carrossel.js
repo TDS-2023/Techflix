@@ -66,4 +66,4 @@ esquerda2.addEventListener
     }
     );
 
-let width = (carrossel.offsetWidth); (carrossel.offsetWidth);
+let width = (carrossel.offsetWidth); (carrossel2.offsetWidth);
