@@ -278,27 +278,13 @@ footer > h2 {
 @media only screen and (max-width: 600px) {
     .login-principal {
         flex-direction: column;
-
-    }
-
-    .left-cadastro > h1 {
-        display: none;
-    }
-
-    .left-cadastro {
-        width: 100%;
-        height: auto;
     }
 
     .right-cadastro {
         width: 100%;
         height: auto;
     }
-
-    .left-cadastro-image {
-        width: 50vw;
-    }
-
+    
     .card-cadastro {
         width: 90%;
     }

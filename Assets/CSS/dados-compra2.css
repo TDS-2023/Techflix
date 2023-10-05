@@ -118,8 +118,8 @@ main{
     left: 20px;
 }
 
-/* Estilos da seção de login principal */
-.login-principal {
+/* Estilos da seção de dados compras 2 principal */
+.dadoscompras2-principal {
     width: 100vw;
     height: 100vh;
     background: #201b2c;
@@ -128,7 +128,7 @@ main{
     align-items: center;
 }
 
-/* Estilos da seção de login com movimentação */
+/* Estilos da seção de dados compras 2 com movimentação */
 .movimentar {
     margin-top: 200px;
     flex-direction: column;
@@ -137,29 +137,9 @@ main{
     align-items: center;
 }
 
-/* Estilos da seção esquerda de login */
-.left-login {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
 
-.left-login>h1 {
-    font-size: 2vw;
-    color: #77ffc0;
-    margin-bottom: 20px;
-}
-
-/* Estilos da imagem à esquerda do login */
-.left-login-image {
-    width: 35vw;
-}
-
-/* Estilos da seção direita de login */
-.right-login {
+/* Estilos da seção direita de dados compras 2 */
+.right-dadoscompras2 {
     width: 50vw;
     height: 100vh;
     display: flex;
@@ -168,8 +148,8 @@ main{
     margin-bottom: 9px;
 }
 
-/* Estilos do cartão de login */
-.card-login {
+/* Estilos do cartão de dados compras 2 */
+.card-dadoscompras2 {
     width: 60%;
     display: flex;
     justify-content: center;
@@ -181,7 +161,7 @@ main{
     box-shadow: 0 10px 40px #00000056;
 }
 
-.card-login>h1 {
+.card-dadoscompras2>h1 {
     color: #00ff88;
     font-weight: 800;
     margin: 0;
@@ -225,8 +205,8 @@ main{
     padding: 20px 1px 1px;
 }
 
-/* Estilos do botão de login */
-.btn-login {
+/* Estilos do botão de dados compras 2 */
+.btn-dadoscompras2 {
     width: 100%;
     padding: 16px 0;
     margin: 25px;
@@ -248,12 +228,6 @@ main{
     flex-direction: row;
     gap: 30px;
     color: #f0ffffde;
-}
-
-/* Estilos do link do rodapé */
-.pagina-login {
-    text-decoration: none;
-    color: #00ff88;
 }
 
 /* Estilos do link de cor entre */
@@ -281,36 +255,23 @@ footer>h2 {
 }
 
 @media only screen and (max-width: 950px) {
-    .card-login {
+    .card-dadoscompras2 {
         width: 85%;
     }
 }
 
 @media only screen and (max-width: 600px) {
-    .login-principal {
+    .dadoscompras2-principal {
         flex-direction: column;
 
     }
 
-    .left-login>h1 {
-        display: none;
-    }
-
-    .left-login {
+    .right-dadoscompras2 {
         width: 100%;
         height: auto;
     }
 
-    .right-login {
-        width: 100%;
-        height: auto;
-    }
-
-    .left-login-image {
-        width: 50vw;
-    }
-
-    .card-login {
+    .card-dadoscompras2 {
         width: 90%;
     }
 }

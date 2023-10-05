@@ -257,6 +257,7 @@ footer > h2 {
 
 /* Media query para telas menores que 600px */
 @media only screen and (max-width: 600px) {
+    
     .login-principal {
         flex-direction: column;
     }

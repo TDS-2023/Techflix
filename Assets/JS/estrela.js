@@ -1,9 +1,6 @@
 function Avaliar(estrela) {
 
     var url = window.location;
-    url = url.toString()
-    url = url.split("./HTML/feedback.html");
-    url = url[0];
 
     var s1 = document.getElementById("s1");
     var s2 = document.getElementById("s2");
@@ -49,6 +46,6 @@ function Avaliar(estrela) {
         avaliacao = 5;
     }
 
-    document.getElementById('rating').innerHTML = avaliacao;
+    document.getElementById("rating").innerHTML = avaliacao;
 
 }
