@@ -10,6 +10,7 @@
 
 /* Configurações gerais do corpo da página */
 body {
+    background: #201b2c;
     width: 100vw;
     height: 100vh;
     overflow-x: hidden;
@@ -110,15 +111,6 @@ main{
     font-family: 'Roboto', sans-serif;
 }
 
-/* Estilos para a seção de cadastro */
-.cadastro-principal {
-    width: 100vw;
-    height: 100vh;
-    background: #201b2c;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 /* Container para o conteúdo do cadastro */
 .movimentar {
@@ -126,7 +118,6 @@ main{
     flex-direction: column;
     width: 100vw;
     height: 100vh;
-    background: #201b2c;
     justify-content: center;
     align-items: center;
 }
@@ -215,20 +206,24 @@ main{
 }
 
 /* Botão de Envio */
-.btn-cadastro {
+.cor-entre-login, .btn-cadastro {
     width: 100%;
-    padding: 16px 0;
-    margin: 25px;
+    padding: 10px;
     border: none;
     border-radius: 8px;
     outline: none;
     text-transform: uppercase;
     font-weight: 800;
     letter-spacing: 3px;
-    color: #2b134b;
     background: #00ff88;
     cursor: pointer;
     box-shadow: 0 10px 40px -12px #00ff8052;
+}
+
+.cor-entre-login {
+    margin-left: 2px;
+    text-decoration: none;
+    color: #202020;
 }
 
 /* Opções de aceitação de termos */
@@ -239,12 +234,6 @@ main{
     flex-direction: row;
     gap: 10px;
     color: #f0ffffde;
-}
-
-/* Links para páginas de login */
-.pagina-login {
-    text-decoration: none;
-    color: #00ff88;
 }
 
 .cor-entre {
