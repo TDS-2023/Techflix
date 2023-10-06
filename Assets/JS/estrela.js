@@ -1,11 +1,11 @@
 function Avaliar(estrela) {
 
-    var s1 = document.getElementById("s1");
-    var s2 = document.getElementById("s2");
-    var s3 = document.getElementById("s3");
-    var s4 = document.getElementById("s4");
-    var s5 = document.getElementById("s5");
-    var avaliacao = 0;
+    let s1 = document.getElementById("s1");
+    let s2 = document.getElementById("s2");
+    let s3 = document.getElementById("s3");
+    let s4 = document.getElementById("s4");
+    let s5 = document.getElementById("s5");
+    let avaliacao = 0;
 
     s1.src = "../Img/star0.png";
     s2.src = "../Img/star0.png";
