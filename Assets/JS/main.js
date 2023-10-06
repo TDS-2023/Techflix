@@ -1,8 +1,8 @@
 function logar() {
-    var email = document.getElementById("email").value;
-    var usuario = document.getElementById("usuario").value;
-    var senha = document.getElementById("senha").value;
-    var mensagemElement = document.getElementById("mensagem");
+    let email = document.getElementById("email").value;
+    let usuario = document.getElementById("usuario").value;
+    let senha = document.getElementById("senha").value;
+    let mensagemElement = document.getElementById("mensagem");
 
     if (email == localStorage.getItem("email") && senha == localStorage.getItem("senha") || usuario == localStorage.getItem("usuario")) {
         mensagemElement.textContent = "Bem-vindo de volta, " + localStorage.getItem("usuario") + "!";
