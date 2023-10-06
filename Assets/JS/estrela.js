@@ -1,7 +1,5 @@
 function Avaliar(estrela) {
 
-    var url = window.location;
-
     var s1 = document.getElementById("s1");
     var s2 = document.getElementById("s2");
     var s3 = document.getElementById("s3");
