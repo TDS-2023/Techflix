@@ -25,7 +25,6 @@ function cadastrar() {
     let usuario = document.getElementById("cadastro_usuario").value;
     let email = document.getElementById("cadastro_email").value;
     let senha = document.getElementById("cadastro_senha").value;
-    let mensagemElement = document.getElementById("mensagem_cadastro").value;
 
     localStorage.setItem("usuario", usuario);
     localStorage.setItem("email", email);
