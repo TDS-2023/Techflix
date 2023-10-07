@@ -52,6 +52,7 @@ nav {
 
 .btn {
     display: flex;
+    flex-wrap: wrap;
 }
 
 /* Estilos dos botões de cadastro e login */
@@ -258,7 +259,7 @@ footer>h2 {
 
 
 /* Media query para tablets com largura máxima de 768px */
-@media only screen and (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 1024px) {
     header {
         box-sizing: border-box;
     }
@@ -268,17 +269,9 @@ footer>h2 {
     }
 
     .nav-itens {
-        flex-direction: column;
         align-items: center;
     }
 
-    .nav-itens li {
-        margin-bottom: 10px;
-    }
-
-    .btn {
-        margin-top: 10px;
-    }
 
     .lupa-img {
         display: none;
@@ -344,7 +337,7 @@ footer>h2 {
     }
 
     .lupa-img {
-        top: 2px;
+        display: none;
     }
 
     .nav-itens {
