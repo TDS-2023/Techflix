@@ -54,6 +54,7 @@ nav {
 
 .btn {
     display: flex;
+    flex-wrap: wrap;
 }
 
 /* Estilos dos botões de cadastro e login */

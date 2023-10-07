@@ -54,6 +54,7 @@ nav {
 
 .btn {
     display: flex;
+    flex-wrap: wrap;
 }
 
 /* Estilos dos botões de cadastro e login */
@@ -234,7 +235,7 @@ footer {
 }
 
 /* Media query para tablets com largura máxima de 768px */
-@media only screen and (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 1024px){
     header {
         padding: 10px;
     }
@@ -319,7 +320,7 @@ footer {
     }
 
     .lupa-img {
-        top: 2px;
+        display: none;
     }
 
     .nav-itens {
