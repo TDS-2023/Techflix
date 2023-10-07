@@ -53,6 +53,7 @@ nav {
 .btn {
     display: flex;
     flex-wrap: wrap;
+    margin-right: 15px;
 }
 
 /* Estilos dos botões de cadastro e login */
@@ -259,7 +260,7 @@ footer>h2 {
 
 
 /* Media query para tablets com largura máxima de 768px */
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (max-width: 768px) and (max-width: 1024px) {
     header {
         box-sizing: border-box;
     }
@@ -272,6 +273,10 @@ footer>h2 {
         align-items: center;
     }
 
+    .links {
+        display: flex;
+        align-items: center;
+    }
 
     .lupa-img {
         display: none;
@@ -313,6 +318,10 @@ footer>h2 {
 
 /* Media query para celulares com largura máxima de 600px */
 @media only screen and (max-width: 600px) {
+    body {
+        overflow-x: hidden;
+    }
+
     header {
         box-sizing: border-box;
     }
@@ -320,7 +329,6 @@ footer>h2 {
     .btn {
         display: flex;
         flex-direction: column;
-        margin-top: 10px;
     }
 
     .btn-dadoscompras {
@@ -337,7 +345,7 @@ footer>h2 {
     }
 
     .lupa-img {
-        display: none;
+        top: 2px;
     }
 
     .nav-itens {
