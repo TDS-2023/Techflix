@@ -229,7 +229,7 @@ main {
 .check {
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    gap: 30px;
     color: #f0ffffde;
 }
 
