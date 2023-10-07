@@ -278,6 +278,7 @@ footer > h2 {
     }
 
     .nav-itens {
+        display: flex;
         flex-direction: column; 
         align-items: center;
         margin-top: 15px; 
@@ -308,7 +309,7 @@ footer > h2 {
     }
 
     #busca {
-        display: none;
+        display: flex;
     }
 
     .lupa-img {
@@ -316,6 +317,10 @@ footer > h2 {
     }
 
     .nav-itens {
+        display: flex;
+    }
+
+    .btn {
         display: flex;
     }
 
