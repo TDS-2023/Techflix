@@ -8,43 +8,51 @@
     box-sizing: border-box;
 }
 
-/* Estilos gerais do corpo da página */
+/* Configurações gerais do corpo da página */
 body {
     overflow-x: hidden;
     width: 100vw;
     height: 100vh;
+    background: #201b2c;
+    font-family: 'Roboto', sans-serif;
 }
 
 /* Estilos do cabeçalho */
 header {
-    width: 100%;
+    color: aliceblue;
     display: flex;
-    padding: 15px 50px;
-    background-color: #00ff88;
+    padding: 15px;
     background: linear-gradient(42deg, #00FF88 2%, #00a85a 10%, #2e263f 42%);
     justify-content: space-between;
-    box-sizing: border-box;
-    color: aliceblue;
-    font-family: 'Poppins', sans-serif;
+    align-items: center;
 }
 
 /* Estilos do logo */
 .logo {
     position: relative;
-    left: 110px;
+    left: 150px;
 }
 
 /* Estilos da barra de navegação */
 nav {
     display: flex;
     font-weight: bold;
-    align-items: center;
     color: #202020;
+    align-items: center;
 }
 
-/* Estilos dos itens de navegação */
 .nav-itens {
     list-style: none;
+    display: flex;
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.btn {
     display: flex;
 }
 
@@ -60,16 +68,14 @@ nav {
     font-weight: bold;
     cursor: pointer;
     opacity: 0.8;
+    margin-left: 10px;
 }
 
 /* Estilos do campo de busca */
 #busca {
-    display: inline;
-    margin-left: 15px;
     outline: none;
     border-radius: 5px;
     padding: 10px;
-    padding-right: 10px;
     background-color: #202020;
     color: white;
     border: none;
@@ -106,8 +112,11 @@ a:hover {
     top: 10px;
 }
 
-main{
-    font-family: 'Roboto', sans-serif;
+main {
+    background-color: #201b2c;
+    color: white;
+    font-size: 16px;
+    min-height: 100vh;
 }
 
 /* Estilos da seção de Login Principal */
@@ -206,14 +215,6 @@ main{
     padding: 20px 1px 1px;
 }
 
-.redirecionar-cadastro{
-    position: relative;
-    left: -10px;
-    top: -2x;
-    font-size: 16px;
-    color: #00ff88;
-}
-
 /* Estilos do botão de login */
 .btn-login {
     width: 100%;
@@ -248,14 +249,20 @@ footer > h2 {
     font-size: 20px;
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (max-width: 1015px) {
     .logo {
         display: none;
     }
+
 }
+
 
 /* Media query para telas menores que 950px */
 @media only screen and (max-width: 950px) {
+
+    .logo {
+        display: none;
+    }
 
     .card-login {
         width: 85%;
@@ -291,17 +298,20 @@ footer > h2 {
 /* Media query para telas menores que 600px */
 @media only screen and (max-width: 600px) {
 
+    header {
+        width: auto;
+    }
+
     .logo {
         display: none;
     }
 
     #busca {
-        width: 70%;
-        padding-right: 30px;
+        display: none;
     }
 
     .lupa-img {
-        width: 20px;
+        display: none;
     }
 
     .nav-itens {
@@ -310,7 +320,6 @@ footer > h2 {
 
     .cadastro,
     .login {
-        padding: 10px 15px;
         font-size: 14px;
         width: auto;
         height: auto;
@@ -348,6 +357,7 @@ footer > h2 {
 
     footer {
         height: auto;
+        width: 100%;
     }
 
     footer > h2 {

@@ -8,44 +8,49 @@
     box-sizing: border-box;
 }
 
-/* Estilos do corpo da página */
+/* Configurações gerais do corpo da página */
 body {
-    background: #201b2c;
-    width: 100vw;
-    height: 100vh;
     overflow-x: hidden;
+    background: #201b2c;
+    font-family: 'Roboto', sans-serif;
 }
 
 /* Estilos do cabeçalho */
 header {
-    width: 100%;
+    color: aliceblue;
     display: flex;
-    padding: 15px 50px;
-    background-color: #00ff88;
+    padding: 15px;
     background: linear-gradient(42deg, #00FF88 2%, #00a85a 10%, #2e263f 42%);
     justify-content: space-between;
-    box-sizing: border-box;
-    color: aliceblue;
-    font-family: 'Poppins', sans-serif;
+    align-items: center;
 }
 
 /* Estilos do logo */
 .logo {
     position: relative;
-    left: 110px;
+    left: 150px;
 }
 
 /* Estilos da barra de navegação */
 nav {
     display: flex;
     font-weight: bold;
-    align-items: center;
     color: #202020;
+    align-items: center;
 }
 
-/* Estilos dos itens de navegação */
 .nav-itens {
     list-style: none;
+    display: flex;
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.btn {
     display: flex;
 }
 
@@ -61,16 +66,14 @@ nav {
     font-weight: bold;
     cursor: pointer;
     opacity: 0.8;
+    margin-left: 10px;
 }
 
 /* Estilos do campo de busca */
 #busca {
-    display: inline;
-    margin-left: 15px;
     outline: none;
     border-radius: 5px;
     padding: 10px;
-    padding-right: 10px;
     background-color: #202020;
     color: white;
     border: none;
@@ -103,12 +106,13 @@ a:hover {
 
 /* Estilos da imagem da lupa na barra de pesquisa */
 .lupa-img {
-    position: relative;
     top: 10px;
 }
 
-main{
-    font-family: 'Roboto', sans-serif;
+main {
+    background-color: #201b2c;
+    padding: 10px;
+    min-height: 100vh;
 }
 
 /* Estilos do checkbox e rótulo */
@@ -118,39 +122,38 @@ main{
     left: 20px;
 }
 
-/* Estilos da seção de dados compras 2 principal */
+/* Estilos da seção dados compras principal */
 .dadoscompras2-principal {
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     background: #201b2c;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-/* Estilos da seção de dados compras 2 com movimentação */
+/* Estilos da seção de dados compras com movimentação */
 .movimentar {
-    margin-top: 200px;
+    margin-top: 20px;
     flex-direction: column;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-
-/* Estilos da seção direita de dados compras 2 */
+/* Estilos da seção direita de dados compras */
 .right-dadoscompras2 {
-    width: 50vw;
-    height: 100vh;
+    width: 100%;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 9px;
 }
 
-/* Estilos do cartão de dados compras 2 */
+/* Estilos do cartão de dados compras */
 .card-dadoscompras2 {
-    width: 60%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -205,7 +208,7 @@ main{
     padding: 20px 1px 1px;
 }
 
-/* Estilos do botão de dados compras 2 */
+/* Estilos do botão de dados compras */
 .btn-dadoscompras2 {
     width: 100%;
     padding: 16px 0;
@@ -226,7 +229,7 @@ main{
 .check {
     display: flex;
     flex-direction: row;
-    gap: 30px;
+    gap: 10px;
     color: #f0ffffde;
 }
 
@@ -238,13 +241,12 @@ main{
 
 /* Rodapé */
 footer {
-    margin-top: 129px;
+    margin-top: 20px;
     font-family: 'Roboto', sans-serif;
     position: relative;
     width: 100%;
     text-align: center;
     padding: 20px 50px;
-    padding-top: 30px;
     background: linear-gradient(42deg, #00FF88 2%, #00a85a 10%, #2e263f 42%);
     box-sizing: border-box;
     color: aliceblue;
@@ -254,16 +256,36 @@ footer>h2 {
     font-size: 20px;
 }
 
-@media only screen and (max-width: 950px) {
-    .card-dadoscompras2 {
-        width: 85%;
+
+/* Media query para tablets com largura máxima de 768px */
+@media only screen and (max-width: 768px) {
+    header {
+        box-sizing: border-box;
     }
-}
 
-@media only screen and (max-width: 600px) {
-    .dadoscompras2-principal {
+    .logo {
+        display: none;
+    }
+
+    .nav-itens {
         flex-direction: column;
+        align-items: center;
+    }
 
+    .nav-itens li {
+        margin-bottom: 10px;
+    }
+
+    .btn {
+        margin-top: 10px;
+    }
+
+    .lupa-img {
+        display: none;
+    }
+
+    main {
+        font-size: 14px;
     }
 
     .right-dadoscompras2 {
@@ -272,6 +294,98 @@ footer>h2 {
     }
 
     .card-dadoscompras2 {
-        width: 90%;
+        width: max-content;
+        padding: 20px;
+    }
+
+    .campodetexto > input {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .campodetexto > label {
+        font-size: 14px;
+    }
+
+    .btn-dadoscompras2 {
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    footer {
+        width: auto;
+        padding: 5px;
+    }
+}
+
+/* Media query para celulares com largura máxima de 600px */
+@media only screen and (max-width: 600px) {
+    header {
+        box-sizing: border-box;
+    }
+
+    .btn {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .btn-dadoscompras2 {
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    #busca {
+        padding-right: 1px;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .lupa-img {
+        top: 2px;
+    }
+
+    .nav-itens {
+        display: none;
+    }
+
+    main {
+        font-size: 12px;
+    }
+
+    .right-dadoscompras2 {
+        width: 100vw;
+        height: auto;
+    }
+
+    .card-dadoscompras2 {
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
+    
+    .card-dadoscompras2 > h1 {
+        text-align: center;
+    }
+    
+    .campodetexto > input {
+        padding: 8px;
+    }
+    
+    .campodetexto > label {
+        font-size: 12px;
+    }
+        
+    footer {
+        height: auto;
+        width: auto;
+    }
+    
+    footer > h2 {
+        font-size: 14px;
     }
 }
